@@ -1,0 +1,51 @@
+site_name: gdalcubes
+site_url: https://github.com/appelmar/gdalcubes
+repo_url: https://github.com/appelmar/gdalcubes
+edit_uri: ""
+
+site_author: Marius Appel
+nav:
+    - Home: index.md
+    - Basic Concepts:
+      - Image Collections: concepts/image_collection.md
+      - Image Collection Formats: concepts/image_collection_formats.md
+      - Data Cube Views: concepts/cube_view.md
+      - Chunking: concepts/chunking.md
+      - Internal Storage: concepts/storage.md
+      - Serialization: concepts/serialization.md
+    - Operations on Data Cubes:
+      - Overview: operations/overview.md
+      - Reduction over Time: operations/reduce_time.md
+      - Reduction over Space: operations/reduce_space.md
+      - Moving Windows over Time: operations/window_time.md
+      - Pixel Functions: operations/apply_pixel.md
+      - Pixel Filtering: operations/filter_predicate.md
+      - Band Selection: operations/select_bands.md
+      - Data Cube Joins: operations/join_bands.md
+      - NetCDF Output: operations/write_ncdf.md
+    - Distributed Processing:
+      - gdalcubes_server: distributed/server.md
+    - R Package:
+      - Installation: R/installation.md
+      - "Tutorial: Sentinel 2 Time Series in R": R/sentinel2.md
+    - C++ API: cpp-api.md
+    - Credits: credits.md
+
+theme:
+  name: 'readthedocs'
+  favicon: 'favicon.ico'
+
+#extra:
+#  social:
+#    - type: 'github'
+#      link: 'https://github.com/appelmar/gdalcubes'
+#    - type: 'twitter'
+#      link: 'https://twitter.com/appelmar'
+
+use_directory_urls: false
+
+markdown_extensions:
+  - pymdownx.arithmatex
+
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
