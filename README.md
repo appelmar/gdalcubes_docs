@@ -1,0 +1,2 @@
+# gdalcubes_docs
+Documentation
